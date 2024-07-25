@@ -1,0 +1,131 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: whitesmoke;
+}
+.head{
+    width: 100%;
+    /* height: 80px; */
+    background-color: white;
+    display: flex;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.event{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    border-right:1px solid black ;
+}
+.event :nth-child(6){
+    margin-right: 10px;
+}
+.event div:hover{
+    border-bottom: 1px solid black;
+}
+.profile{
+    /* padding: 10px; */
+    width: 15%;
+}
+.body{
+    /* width: 100%; */
+    padding-left: 150px;
+    padding-top: 40px;
+    /* margin-left: 100px;
+    margin-top: 50px; */
+
+}
+h5{
+    font-family: inherit;
+    font-size: 20px;
+}
+.sub1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.sub2{
+    width: 50%;
+}
+.sub3{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sub21,.sub22{
+    width: 100%;
+}
+.sub21{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub211,.sub212,.sub213{
+    width: 95%;
+    background-color:white;
+    margin-top: 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px   ;
+
+}
+.sub2111,.sub2121,.sub2131{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub2112,.sub2122,.sub2132{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sub2113,.sub2123,.sub2133{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+button{
+    background-color: blue;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+}
+.sub221{
+    width: 45%;
+    height: 400px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+.sub31,.sub32,.sub33,.sub34{
+    width: 50%;
+    border-radius: 5px;
+    background-color: white;
+}
+.sub31{
+    height: 25%;
+}
+.sub32,.sub33,.sub34{
+    height:20%;
+}
+@media (max-width:800px){
+    .sub3{
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            gap: 2px;
+            flex-wrap: wrap;
+        }
+        /* .sub{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .set{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        } */
+         table{
+            border: 3px solid black;
+            border-collapse: collapse;
+            /* background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE68KLM38uy9yntuCRrMIXGOO6MecrEKJ6XQ&s"); */
+            background-size: cover;
+            margin-left: 25%;
+            margin-top: 15%;
+         }
+         tr{
+        
+            border: 1px solid black;
+         }
+         td{
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+         }
+         table:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+         }
+    </style>
+</head>
+<body>
+    <table>
+
+    </table>
+    <script>
+        var n= parseInt(window.prompt("enter the number:"));
+        for(var i=0;i<n;i++){
+            var div=document.createElement("tr");
+            for (var j=0;j<n+4;j++) {
+                var div1=document.createElement("td");
+                div.appendChild(div1);
+                div1.innerHTML="table";
+            }
+          document.querySelector("table").appendChild(div);
+        }
+    </script>
+</body>
+</html>
